@@ -1,0 +1,8 @@
+/* 
+  Localizable.strings
+  Muvr
+
+  Created by Jan Machacek on 5/2/15.
+  Copyright (c) 2015 Muvr. All rights reserved.
+*/
+"MRExerciseSessionViewController.elapsed"="Elapsed %d:%02d";
