@@ -1,0 +1,1820 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5403815F1AED28A0000C8B15 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5403815E1AED28A0000C8B15 /* Settings.bundle */; };
+		540AA44D1BDBE74C00908F4B /* MKPhoneConnectivityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AA44C1BDBE74C00908F4B /* MKPhoneConnectivityTests.swift */; };
+		540AA44F1BDBF36800908F4B /* MKSensorData+EncodingCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AA44E1BDBF36800908F4B /* MKSensorData+EncodingCSV.swift */; };
+		540AA4511BDBFF6B00908F4B /* MKSessionClassifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AA4501BDBFF6B00908F4B /* MKSessionClassifierTests.swift */; };
+		540AA4541BDC043D00908F4B /* MKExerciseConnectivitySession+SensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AA4531BDC043D00908F4B /* MKExerciseConnectivitySession+SensorData.swift */; };
+		5417C4021BC45EBB001C9491 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5417C4011BC45EBB001C9491 /* HealthKit.framework */; };
+		541ABBA41AC577E00056A81B /* MRAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541ABBA31AC577E00056A81B /* MRAppDelegate.swift */; };
+		541ABBA91AC577E00056A81B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541ABBA71AC577E00056A81B /* Main.storyboard */; };
+		541ABBAB1AC577E00056A81B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 541ABBAA1AC577E00056A81B /* Images.xcassets */; };
+		541ABBAE1AC577E00056A81B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541ABBAC1AC577E00056A81B /* LaunchScreen.xib */; };
+		54266B141BB92F16007A8A8A /* MKSensorData+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54266B131BB92F16007A8A8A /* MKSensorData+Decoding.swift */; };
+		54266B151BB92F22007A8A8A /* MKSensorData+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54266B111BB92ECC007A8A8A /* MKSensorData+Encoding.swift */; };
+		54266B171BB92F98007A8A8A /* MKSensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54266B161BB92F98007A8A8A /* MKSensorData.swift */; };
+		54266B181BB92F98007A8A8A /* MKSensorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54266B161BB92F98007A8A8A /* MKSensorData.swift */; };
+		5431545C1BE107F60031BE61 /* MKForwardPropagator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5431545B1BE107F60031BE61 /* MKForwardPropagator.swift */; };
+		543C9A161BDD439B00291EC5 /* MRManagedExerciseSession+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C9A101BDD439B00291EC5 /* MRManagedExerciseSession+CoreDataProperties.swift */; };
+		543C9A171BDD439B00291EC5 /* MRManagedExerciseSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C9A111BDD439B00291EC5 /* MRManagedExerciseSession.swift */; };
+		543C9A181BDD439B00291EC5 /* MRManagedLabelledExercise+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C9A121BDD439B00291EC5 /* MRManagedLabelledExercise+CoreDataProperties.swift */; };
+		543C9A191BDD439B00291EC5 /* MRManagedLabelledExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C9A131BDD439B00291EC5 /* MRManagedLabelledExercise.swift */; };
+		543C9A1A1BDD439B00291EC5 /* MRManagedClassifiedExercise+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C9A141BDD439B00291EC5 /* MRManagedClassifiedExercise+CoreDataProperties.swift */; };
+		543C9A1B1BDD439B00291EC5 /* MRManagedClassifiedExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543C9A151BDD439B00291EC5 /* MRManagedClassifiedExercise.swift */; };
+		544201391B9384B500354DB7 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544201381B9384B500354DB7 /* CoreBluetooth.framework */; };
+		54430EC01BC2CF5200541979 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE161B1BAD941000F0752B /* CoreMotion.framework */; };
+		54430EC51BC2CFD300541979 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE161F1BAD94A400F0752B /* HealthKit.framework */; };
+		544757071B9F34F0001E00BF /* MRResistanceExerciseProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 544757061B9F34F0001E00BF /* MRResistanceExerciseProgressView.xib */; };
+		54477CFD1AF4E82E00F502EC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54477CFB1AF4E82E00F502EC /* Localizable.strings */; };
+		544C73581BE7E99600B76F25 /* MBCircularProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544C73571BE7E99600B76F25 /* MBCircularProgressBar.framework */; };
+		5450C2A11BC3FFF100B257E7 /* MuvrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5450C2A01BC3FFF100B257E7 /* MuvrUITests.swift */; };
+		545269051BB9AB6C003F8EE8 /* MKSensorDataType+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545269031BB9AB6C003F8EE8 /* MKSensorDataType+Decoding.swift */; };
+		5469081B1BC701C200BA1047 /* MKWatchExerciseConnectivitySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546908191BC701BC00BA1047 /* MKWatchExerciseConnectivitySession.swift */; };
+		5469D3821BBA6ECD00EE5ADB /* MKExerciseModelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469D3811BBA6ECD00EE5ADB /* MKExerciseModelTypes.swift */; };
+		5469D3831BBA6ECD00EE5ADB /* MKExerciseModelTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469D3811BBA6ECD00EE5ADB /* MKExerciseModelTypes.swift */; };
+		5469D3851BBA764900EE5ADB /* MKRepetitionEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469D3841BBA764900EE5ADB /* MKRepetitionEstimator.swift */; };
+		5469D3881BBA83D200EE5ADB /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5469D3871BBA83D200EE5ADB /* Accelerate.framework */; };
+		5469D38B1BBAD0A200EE5ADB /* MKExerciseModelSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5469D38A1BBAD0A200EE5ADB /* MKExerciseModelSourceDelegate.swift */; };
+		546D342A1BE0CF54005E614D /* demo-bc-only.raw in Resources */ = {isa = PBXBuildFile; fileRef = 546D34271BE0CF4F005E614D /* demo-bc-only.raw */; };
+		546D342B1BE0CF54005E614D /* demo-lr-only.raw in Resources */ = {isa = PBXBuildFile; fileRef = 546D34281BE0CF4F005E614D /* demo-lr-only.raw */; };
+		546D342C1BE0CF54005E614D /* demo-te-only.raw in Resources */ = {isa = PBXBuildFile; fileRef = 546D34291BE0CF4F005E614D /* demo-te-only.raw */; };
+		546D342D1BE0CFC7005E614D /* MKSensorData+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54266B131BB92F16007A8A8A /* MKSensorData+Decoding.swift */; };
+		546D342E1BE0CFCF005E614D /* MKUnsafeBufferReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487F59B1BB9B53E00ED2E97 /* MKUnsafeBufferReader.swift */; };
+		546D342F1BE0CFE7005E614D /* MKSensorDataType+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545269031BB9AB6C003F8EE8 /* MKSensorDataType+Decoding.swift */; };
+		546E68521BB969DD00DC0FEF /* MKSensorData+Encoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54266B111BB92ECC007A8A8A /* MKSensorData+Encoding.swift */; };
+		546E685C1BB98D0800DC0FEF /* MKMuvrKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E685B1BB98D0800DC0FEF /* MKMuvrKitTests.swift */; };
+		546E685E1BB98D0800DC0FEF /* MuvrKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A775F61BB81467001586DD /* MuvrKit.framework */; };
+		546E68671BB98D1D00DC0FEF /* MKSensorDataSingleTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E68641BB98D1D00DC0FEF /* MKSensorDataSingleTypeTests.swift */; };
+		546E68681BB98D1D00DC0FEF /* MKSensorDataThreeDPerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E68651BB98D1D00DC0FEF /* MKSensorDataThreeDPerformanceTests.swift */; };
+		546E68691BB98D1D00DC0FEF /* MKSensorDataMultipleTypesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546E68661BB98D1D00DC0FEF /* MKSensorDataMultipleTypesTests.swift */; };
+		54706F6C1BD6D89F005BABF0 /* MRSessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54706F6B1BD6D89F005BABF0 /* MRSessionsViewController.swift */; };
+		54706F6F1BD6E6D8005BABF0 /* MRLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54706F6E1BD6E6D8005BABF0 /* MRLabelViewController.swift */; };
+		5471DD3A1BC13911007D1034 /* MKSensorData+Scaffolding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5471DD341BC13760007D1034 /* MKSensorData+Scaffolding.swift */; };
+		547A44501BB8166C00C2CC06 /* MKExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547A444F1BB8166C00C2CC06 /* MKExerciseModel.swift */; };
+		547A44541BB817CD00C2CC06 /* MKWatchConnectivityDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547A44521BB817CD00C2CC06 /* MKWatchConnectivityDelegates.swift */; };
+		547A445A1BB8585300C2CC06 /* MKWatchConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547A44581BB8585300C2CC06 /* MKWatchConnectivity.swift */; };
+		547A445C1BB8600F00C2CC06 /* MKWatchConnectivity+Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547A445B1BB8600F00C2CC06 /* MKWatchConnectivity+Defaults.swift */; };
+		547F92831BA8BA1700A69295 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547F92821BA8BA1700A69295 /* WatchConnectivity.framework */; };
+		547F92851BA8BA4A00A69295 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547F92841BA8BA4A00A69295 /* WatchConnectivity.framework */; };
+		54845AD21BD8D73500C33DBF /* MKLabelledExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54845AD11BD8D73500C33DBF /* MKLabelledExercise.swift */; };
+		54845AD31BD8D73500C33DBF /* MKLabelledExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54845AD11BD8D73500C33DBF /* MKLabelledExercise.swift */; };
+		5487F59C1BB9B53E00ED2E97 /* MKUnsafeBufferReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487F59B1BB9B53E00ED2E97 /* MKUnsafeBufferReader.swift */; };
+		5487F59F1BB9B77E00ED2E97 /* MKCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487F59E1BB9B77E00ED2E97 /* MKCodec.swift */; };
+		5487F5A01BB9B77E00ED2E97 /* MKCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487F59E1BB9B77E00ED2E97 /* MKCodec.swift */; };
+		5487F5A41BB9C4C500ED2E97 /* MKSensorData+InternalCodecTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487F5A31BB9C4C500ED2E97 /* MKSensorData+InternalCodecTests.swift */; };
+		5487F5A61BB9C9AB00ED2E97 /* MKSensorData+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5487F5A51BB9C9AB00ED2E97 /* MKSensorData+Equatable.swift */; };
+		5487F5AE1BBA640500ED2E97 /* libcompression.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5487F5A91BB9CAB800ED2E97 /* libcompression.tbd */; };
+		5487F5AF1BBA640E00ED2E97 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5487F5AC1BBA63C900ED2E97 /* libz.tbd */; };
+		5488080D1BD5710500419CD8 /* MKPhoneExerciseConnectivitySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5488080C1BD5710500419CD8 /* MKPhoneExerciseConnectivitySession.swift */; };
+		5488080F1BD57BA500419CD8 /* MKPhoneExerciseSessionClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5488080E1BD57BA500419CD8 /* MKPhoneExerciseSessionClassifier.swift */; };
+		548808111BD57D7400419CD8 /* MKPhoneExerciseSessionClassifierDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548808101BD57D7400419CD8 /* MKPhoneExerciseSessionClassifierDelegates.swift */; };
+		548808131BD57D8800419CD8 /* MKPhoneExerciseSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548808121BD57D8800419CD8 /* MKPhoneExerciseSession.swift */; };
+		54880CAD1BC048A800349C2E /* MKRepetitionEstimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54880CAC1BC048A800349C2E /* MKRepetitionEstimatorTests.swift */; };
+		548CAB3D1BBAF72600A34D81 /* MKClassifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAB3C1BBAF72600A34D81 /* MKClassifierTests.swift */; };
+		548CAB411BBB0FCA00A34D81 /* XCTestCase+Exceptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548CAB401BBB0FCA00A34D81 /* XCTestCase+Exceptions.swift */; };
+		549A300A1BDD0BC6006A70EB /* Muvr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 549A30081BDD0BC6006A70EB /* Muvr.xcdatamodeld */; };
+		54A48ACB1BA474F300F4A81B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54A48AC91BA474F300F4A81B /* Interface.storyboard */; };
+		54A48ACD1BA474F300F4A81B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A48ACC1BA474F300F4A81B /* Assets.xcassets */; };
+		54A48AD41BA474F300F4A81B /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 54A48AD31BA474F300F4A81B /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		54A48AD91BA474F300F4A81B /* MRMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A48AD81BA474F300F4A81B /* MRMainController.swift */; };
+		54A48ADB1BA474F300F4A81B /* MRExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A48ADA1BA474F300F4A81B /* MRExtensionDelegate.swift */; };
+		54A48ADD1BA474F300F4A81B /* MRGlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A48ADC1BA474F300F4A81B /* MRGlanceController.swift */; };
+		54A48AE41BA474F300F4A81B /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 54A48AC71BA474F300F4A81B /* Watch.app */; };
+		54A775F91BB81467001586DD /* MuvrKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A775F81BB81467001586DD /* MuvrKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54A7760B1BB81467001586DD /* MuvrKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A775F61BB81467001586DD /* MuvrKit.framework */; };
+		54A7760C1BB81467001586DD /* MuvrKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54A775F61BB81467001586DD /* MuvrKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54A776171BB8149E001586DD /* MuvrKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A775F81BB81467001586DD /* MuvrKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54A776211BB81562001586DD /* MuvrKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A7761C1BB8149E001586DD /* MuvrKit.framework */; };
+		54A776221BB81562001586DD /* MuvrKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54A7761C1BB8149E001586DD /* MuvrKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54B86D0B1BD197830016DDA0 /* MRBuildDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 54B86D0A1BD197470016DDA0 /* MRBuildDetail.m */; };
+		54BD57B71BC53137008B5BC4 /* MKPhoneConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BD57B61BC53137008B5BC4 /* MKPhoneConnectivity.swift */; };
+		54BD57B91BC546EE008B5BC4 /* UI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BD57B81BC546EE008B5BC4 /* UI.xcassets */; };
+		54C79CB01BD2962A00FAE395 /* MRSessionProgressGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C79CAF1BD2962A00FAE395 /* MRSessionProgressGroup.swift */; };
+		54C79CB21BD2968600FAE395 /* MRSessionProgressGroupRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C79CB11BD2968600FAE395 /* MRSessionProgressGroupRenderer.swift */; };
+		54CC465A1B08FAD5007B739A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54CC46591B08FAD5007B739A /* MobileCoreServices.framework */; };
+		54D3457E1BB9232A00F65091 /* MKClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D3457D1BB9232A00F65091 /* MKClassifier.swift */; };
+		54D345801BB9245E00F65091 /* MKSensorDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D3457F1BB9245E00F65091 /* MKSensorDataDelegate.swift */; };
+		54D345821BB924A500F65091 /* MKClassificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D345811BB924A500F65091 /* MKClassificationDelegate.swift */; };
+		54D345841BB9251700F65091 /* MKClassifiedExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D345831BB9251700F65091 /* MKClassifiedExercise.swift */; };
+		54D345851BB9251700F65091 /* MKClassifiedExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D345831BB9251700F65091 /* MKClassifiedExercise.swift */; };
+		54D3458B1BB928B600F65091 /* MKClassificationPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D3458A1BB928B600F65091 /* MKClassificationPipeline.swift */; };
+		54D3458C1BB928B600F65091 /* MKClassificationPipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D3458A1BB928B600F65091 /* MKClassificationPipeline.swift */; };
+		54D5275E1B94D79F00B56719 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D527581B94D79F00B56719 /* Charts.framework */; };
+		54D5275F1B94D79F00B56719 /* JTCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54D527591B94D79F00B56719 /* JTCalendar.framework */; };
+		54D5E9721BD3C6F70002CDB5 /* MKPhoneConnectivityDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D5E9711BD3C6F70002CDB5 /* MKPhoneConnectivityDelegates.swift */; };
+		54E4CB401BD8021C00E0B696 /* MKSensorData+EncodingCSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4CB3F1BD8021C00E0B696 /* MKSensorData+EncodingCSV.swift */; };
+		54E9131B1BC306A500B7F9F0 /* class-1.csv in Resources */ = {isa = PBXBuildFile; fileRef = 54E913181BC306A500B7F9F0 /* class-1.csv */; };
+		54E9131C1BC306A500B7F9F0 /* model-3.raw in Resources */ = {isa = PBXBuildFile; fileRef = 54E913191BC306A500B7F9F0 /* model-3.raw */; };
+		54EFE97B1BDEC74E00AE190A /* MRAppDelegate+UITesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EFE97A1BDEC74E00AE190A /* MRAppDelegate+UITesting.swift */; };
+		54FD504E1BDBD27C0015771D /* MRSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FD504D1BDBD27C0015771D /* MRSessionViewController.swift */; };
+		6477A7581BDFBDE7004BC51F /* NSDate+DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6477A7571BDFBDE7004BC51F /* NSDate+DateUtils.swift */; };
+		64DC9FD71BE1310400C18060 /* NSManagedObjectContext+CountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DC9FD61BE1310400C18060 /* NSManagedObjectContext+CountRequest.swift */; };
+		9D30379C1B95CCC500426C70 /* Models.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9D30379B1B95CCC500426C70 /* Models.bundle */; };
+		9D4A51491BE77BE70065BEF8 /* MKActivationFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6D27B01BE25F9800F4E4A7 /* MKActivationFunctions.swift */; };
+		9D4A514A1BE796BD0065BEF8 /* MKActivationFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6D27B01BE25F9800F4E4A7 /* MKActivationFunctions.swift */; };
+		9D4A514B1BE7976B0065BEF8 /* MKForwardPropagator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5431545B1BE107F60031BE61 /* MKForwardPropagator.swift */; };
+		9D6D27AF1BE23ABD00F4E4A7 /* MKForwardPropagatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6D27AE1BE23ABD00F4E4A7 /* MKForwardPropagatorTests.swift */; };
+		FC1AC75B1ADE984500832DE7 /* MRUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1AC75A1ADE984500832DE7 /* MRUserDefaults.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5450C2A31BC3FFF100B257E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 541ABB961AC577E00056A81B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 541ABB9D1AC577E00056A81B;
+			remoteInfo = Muvr;
+		};
+		546E685F1BB98D0800DC0FEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 541ABB961AC577E00056A81B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54A775F51BB81467001586DD;
+			remoteInfo = "MuvrKit iOS";
+		};
+		54A48AD51BA474F300F4A81B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 541ABB961AC577E00056A81B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54A48AD21BA474F300F4A81B;
+			remoteInfo = "Watch Extension";
+		};
+		54A48AE11BA474F300F4A81B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 541ABB961AC577E00056A81B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54A48AC61BA474F300F4A81B;
+			remoteInfo = Watch;
+		};
+		54A776091BB81467001586DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 541ABB961AC577E00056A81B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54A775F51BB81467001586DD;
+			remoteInfo = MuvrKit;
+		};
+		54A776231BB81562001586DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 541ABB961AC577E00056A81B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54A776131BB8149E001586DD;
+			remoteInfo = "MuvrKit Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		54A48AE31BA474F300F4A81B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				54A48AE41BA474F300F4A81B /* Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A48AEA1BA474F300F4A81B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				54A48AD41BA474F300F4A81B /* Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DE15E91BAD72A500F0752B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				54A7760C1BB81467001586DD /* MuvrKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54DE15FD1BAD780800F0752B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				54A776221BB81562001586DD /* MuvrKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2C3AA10F80ED661B9AC5A823 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5403815E1AED28A0000C8B15 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		540AA44C1BDBE74C00908F4B /* MKPhoneConnectivityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKPhoneConnectivityTests.swift; sourceTree = "<group>"; };
+		540AA44E1BDBF36800908F4B /* MKSensorData+EncodingCSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKSensorData+EncodingCSV.swift"; sourceTree = "<group>"; };
+		540AA4501BDBFF6B00908F4B /* MKSessionClassifierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKSessionClassifierTests.swift; sourceTree = "<group>"; };
+		540AA4531BDC043D00908F4B /* MKExerciseConnectivitySession+SensorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKExerciseConnectivitySession+SensorData.swift"; sourceTree = "<group>"; };
+		5410C82C1B9DC9EA005C57C1 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		5410C82E1B9DC9EA005C57C1 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = "Pods/../build/Debug-iphoneos/SQLite.framework"; sourceTree = "<group>"; };
+		5410C82F1B9DC9EA005C57C1 /* sqlite3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sqlite3.framework; path = "Pods/../build/Debug-iphoneos/sqlite3.framework"; sourceTree = "<group>"; };
+		5410C8341B9DCA09005C57C1 /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
+		5417C4011BC45EBB001C9491 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		541ABB9E1AC577E00056A81B /* Muvr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Muvr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		541ABBA21AC577E00056A81B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		541ABBA31AC577E00056A81B /* MRAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRAppDelegate.swift; sourceTree = "<group>"; };
+		541ABBA81AC577E00056A81B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		541ABBAA1AC577E00056A81B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		541ABBAD1AC577E00056A81B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		54266B111BB92ECC007A8A8A /* MKSensorData+Encoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKSensorData+Encoding.swift"; sourceTree = "<group>"; };
+		54266B131BB92F16007A8A8A /* MKSensorData+Decoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKSensorData+Decoding.swift"; sourceTree = "<group>"; };
+		54266B161BB92F98007A8A8A /* MKSensorData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKSensorData.swift; sourceTree = "<group>"; };
+		5431545B1BE107F60031BE61 /* MKForwardPropagator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKForwardPropagator.swift; sourceTree = "<group>"; };
+		543C9A101BDD439B00291EC5 /* MRManagedExerciseSession+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MRManagedExerciseSession+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		543C9A111BDD439B00291EC5 /* MRManagedExerciseSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRManagedExerciseSession.swift; sourceTree = "<group>"; };
+		543C9A121BDD439B00291EC5 /* MRManagedLabelledExercise+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MRManagedLabelledExercise+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		543C9A131BDD439B00291EC5 /* MRManagedLabelledExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRManagedLabelledExercise.swift; sourceTree = "<group>"; };
+		543C9A141BDD439B00291EC5 /* MRManagedClassifiedExercise+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MRManagedClassifiedExercise+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		543C9A151BDD439B00291EC5 /* MRManagedClassifiedExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRManagedClassifiedExercise.swift; sourceTree = "<group>"; };
+		544201361B93847100354DB7 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		544201381B9384B500354DB7 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		5442013A1B9384BE00354DB7 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		5442013C1B9384CA00354DB7 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		54430EC21BC2CF5900541979 /* Watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Watch Extension.entitlements"; sourceTree = "<group>"; };
+		54430EC61BC2CFD300541979 /* Muvr.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Muvr.entitlements; sourceTree = "<group>"; };
+		544757061B9F34F0001E00BF /* MRResistanceExerciseProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MRResistanceExerciseProgressView.xib; sourceTree = "<group>"; };
+		54477CFC1AF4E82E00F502EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		544C73571BE7E99600B76F25 /* MBCircularProgressBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBCircularProgressBar.framework; path = "Pods/../build/Debug-iphoneos/MBCircularProgressBar.framework"; sourceTree = "<group>"; };
+		5450C29E1BC3FFF100B257E7 /* MuvrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuvrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5450C2A01BC3FFF100B257E7 /* MuvrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuvrUITests.swift; sourceTree = "<group>"; };
+		5450C2A21BC3FFF100B257E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		545269031BB9AB6C003F8EE8 /* MKSensorDataType+Decoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKSensorDataType+Decoding.swift"; sourceTree = "<group>"; };
+		5455E71F1AF9022A0049BB6B /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		546908191BC701BC00BA1047 /* MKWatchExerciseConnectivitySession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKWatchExerciseConnectivitySession.swift; sourceTree = "<group>"; };
+		5469D3811BBA6ECD00EE5ADB /* MKExerciseModelTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKExerciseModelTypes.swift; sourceTree = "<group>"; };
+		5469D3841BBA764900EE5ADB /* MKRepetitionEstimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKRepetitionEstimator.swift; sourceTree = "<group>"; };
+		5469D3871BBA83D200EE5ADB /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		5469D38A1BBAD0A200EE5ADB /* MKExerciseModelSourceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKExerciseModelSourceDelegate.swift; sourceTree = "<group>"; };
+		546D34271BE0CF4F005E614D /* demo-bc-only.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = "demo-bc-only.raw"; sourceTree = "<group>"; };
+		546D34281BE0CF4F005E614D /* demo-lr-only.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = "demo-lr-only.raw"; sourceTree = "<group>"; };
+		546D34291BE0CF4F005E614D /* demo-te-only.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = "demo-te-only.raw"; sourceTree = "<group>"; };
+		546E68591BB98D0800DC0FEF /* MuvrKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuvrKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		546E685B1BB98D0800DC0FEF /* MKMuvrKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMuvrKitTests.swift; sourceTree = "<group>"; };
+		546E685D1BB98D0800DC0FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		546E68641BB98D1D00DC0FEF /* MKSensorDataSingleTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKSensorDataSingleTypeTests.swift; sourceTree = "<group>"; };
+		546E68651BB98D1D00DC0FEF /* MKSensorDataThreeDPerformanceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKSensorDataThreeDPerformanceTests.swift; sourceTree = "<group>"; };
+		546E68661BB98D1D00DC0FEF /* MKSensorDataMultipleTypesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKSensorDataMultipleTypesTests.swift; sourceTree = "<group>"; };
+		54706F6B1BD6D89F005BABF0 /* MRSessionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRSessionsViewController.swift; sourceTree = "<group>"; };
+		54706F6E1BD6E6D8005BABF0 /* MRLabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRLabelViewController.swift; sourceTree = "<group>"; };
+		5471DD341BC13760007D1034 /* MKSensorData+Scaffolding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKSensorData+Scaffolding.swift"; sourceTree = "<group>"; };
+		547A444F1BB8166C00C2CC06 /* MKExerciseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKExerciseModel.swift; sourceTree = "<group>"; };
+		547A44521BB817CD00C2CC06 /* MKWatchConnectivityDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKWatchConnectivityDelegates.swift; sourceTree = "<group>"; };
+		547A44581BB8585300C2CC06 /* MKWatchConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKWatchConnectivity.swift; sourceTree = "<group>"; };
+		547A445B1BB8600F00C2CC06 /* MKWatchConnectivity+Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKWatchConnectivity+Defaults.swift"; sourceTree = "<group>"; };
+		547F92821BA8BA1700A69295 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		547F92841BA8BA4A00A69295 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		548225511AC57A3500EEEFCB /* Muvr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Muvr-Bridging-Header.h"; sourceTree = "<group>"; };
+		54845AD11BD8D73500C33DBF /* MKLabelledExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKLabelledExercise.swift; sourceTree = "<group>"; };
+		5487F59B1BB9B53E00ED2E97 /* MKUnsafeBufferReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKUnsafeBufferReader.swift; sourceTree = "<group>"; };
+		5487F59E1BB9B77E00ED2E97 /* MKCodec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKCodec.swift; sourceTree = "<group>"; };
+		5487F5A31BB9C4C500ED2E97 /* MKSensorData+InternalCodecTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKSensorData+InternalCodecTests.swift"; sourceTree = "<group>"; };
+		5487F5A51BB9C9AB00ED2E97 /* MKSensorData+Equatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKSensorData+Equatable.swift"; sourceTree = "<group>"; };
+		5487F5A71BB9CAAE00ED2E97 /* libcompression.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcompression.tbd; path = usr/lib/libcompression.tbd; sourceTree = SDKROOT; };
+		5487F5A91BB9CAB800ED2E97 /* libcompression.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcompression.tbd; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/usr/lib/libcompression.tbd; sourceTree = DEVELOPER_DIR; };
+		5487F5AC1BBA63C900ED2E97 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		5488080C1BD5710500419CD8 /* MKPhoneExerciseConnectivitySession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKPhoneExerciseConnectivitySession.swift; sourceTree = "<group>"; };
+		5488080E1BD57BA500419CD8 /* MKPhoneExerciseSessionClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKPhoneExerciseSessionClassifier.swift; sourceTree = "<group>"; };
+		548808101BD57D7400419CD8 /* MKPhoneExerciseSessionClassifierDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKPhoneExerciseSessionClassifierDelegates.swift; sourceTree = "<group>"; };
+		548808121BD57D8800419CD8 /* MKPhoneExerciseSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKPhoneExerciseSession.swift; sourceTree = "<group>"; };
+		54880CAC1BC048A800349C2E /* MKRepetitionEstimatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKRepetitionEstimatorTests.swift; sourceTree = "<group>"; };
+		548CAB3C1BBAF72600A34D81 /* MKClassifierTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKClassifierTests.swift; sourceTree = "<group>"; };
+		548CAB401BBB0FCA00A34D81 /* XCTestCase+Exceptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Exceptions.swift"; sourceTree = "<group>"; };
+		549A30091BDD0BC6006A70EB /* Muvr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Muvr.xcdatamodel; sourceTree = "<group>"; };
+		54A48AC71BA474F300F4A81B /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54A48ACA1BA474F300F4A81B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		54A48ACC1BA474F300F4A81B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54A48ACE1BA474F300F4A81B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54A48AD31BA474F300F4A81B /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54A48AD81BA474F300F4A81B /* MRMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRMainController.swift; sourceTree = "<group>"; };
+		54A48ADA1BA474F300F4A81B /* MRExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRExtensionDelegate.swift; sourceTree = "<group>"; };
+		54A48ADC1BA474F300F4A81B /* MRGlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRGlanceController.swift; sourceTree = "<group>"; };
+		54A48AE01BA474F300F4A81B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54A775F61BB81467001586DD /* MuvrKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MuvrKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54A775F81BB81467001586DD /* MuvrKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MuvrKit.h; sourceTree = "<group>"; };
+		54A775FA1BB81467001586DD /* Infoi.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Infoi.plist; sourceTree = "<group>"; };
+		54A7761C1BB8149E001586DD /* MuvrKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MuvrKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54A7761E1BB81509001586DD /* Infow.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Infow.plist; sourceTree = "<group>"; };
+		54B86D091BD196190016DDA0 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		54B86D0A1BD197470016DDA0 /* MRBuildDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRBuildDetail.m; sourceTree = "<group>"; };
+		54BD57B61BC53137008B5BC4 /* MKPhoneConnectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKPhoneConnectivity.swift; sourceTree = "<group>"; };
+		54BD57B81BC546EE008B5BC4 /* UI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UI.xcassets; sourceTree = "<group>"; };
+		54C79CAF1BD2962A00FAE395 /* MRSessionProgressGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRSessionProgressGroup.swift; sourceTree = "<group>"; };
+		54C79CB11BD2968600FAE395 /* MRSessionProgressGroupRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRSessionProgressGroupRenderer.swift; sourceTree = "<group>"; };
+		54CC46591B08FAD5007B739A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		54D3457D1BB9232A00F65091 /* MKClassifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKClassifier.swift; sourceTree = "<group>"; };
+		54D3457F1BB9245E00F65091 /* MKSensorDataDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKSensorDataDelegate.swift; sourceTree = "<group>"; };
+		54D345811BB924A500F65091 /* MKClassificationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKClassificationDelegate.swift; sourceTree = "<group>"; };
+		54D345831BB9251700F65091 /* MKClassifiedExercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKClassifiedExercise.swift; sourceTree = "<group>"; };
+		54D3458A1BB928B600F65091 /* MKClassificationPipeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKClassificationPipeline.swift; sourceTree = "<group>"; };
+		54D527571B94D79F00B56719 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		54D527581B94D79F00B56719 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = "Pods/../build/Debug-iphoneos/Charts.framework"; sourceTree = "<group>"; };
+		54D527591B94D79F00B56719 /* JTCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JTCalendar.framework; path = "Pods/../build/Debug-iphoneos/JTCalendar.framework"; sourceTree = "<group>"; };
+		54D5275A1B94D79F00B56719 /* Reachability.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reachability.framework; path = "Pods/../build/Debug-iphoneos/Reachability.framework"; sourceTree = "<group>"; };
+		54D5275B1B94D79F00B56719 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = "Pods/../build/Debug-iphoneos/SQLite.framework"; sourceTree = "<group>"; };
+		54D5275C1B94D79F00B56719 /* sqlite3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sqlite3.framework; path = "Pods/../build/Debug-iphoneos/sqlite3.framework"; sourceTree = "<group>"; };
+		54D5E9711BD3C6F70002CDB5 /* MKPhoneConnectivityDelegates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKPhoneConnectivityDelegates.swift; sourceTree = "<group>"; };
+		54DE161B1BAD941000F0752B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		54DE161F1BAD94A400F0752B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		54E3A21D1BA21482001D9EA5 /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Pods/../build/Debug-iphoneos/Pods.framework"; sourceTree = "<group>"; };
+		54E4CB3F1BD8021C00E0B696 /* MKSensorData+EncodingCSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MKSensorData+EncodingCSV.swift"; sourceTree = "<group>"; };
+		54E913181BC306A500B7F9F0 /* class-1.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "class-1.csv"; sourceTree = "<group>"; };
+		54E913191BC306A500B7F9F0 /* model-3.raw */ = {isa = PBXFileReference; lastKnownFileType = file; path = "model-3.raw"; sourceTree = "<group>"; };
+		54EFE97A1BDEC74E00AE190A /* MRAppDelegate+UITesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MRAppDelegate+UITesting.swift"; sourceTree = "<group>"; };
+		54FD504D1BDBD27C0015771D /* MRSessionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRSessionViewController.swift; sourceTree = "<group>"; };
+		6477A7571BDFBDE7004BC51F /* NSDate+DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+DateUtils.swift"; sourceTree = "<group>"; };
+		64DC9FD61BE1310400C18060 /* NSManagedObjectContext+CountRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+CountRequest.swift"; sourceTree = "<group>"; };
+		9D30379B1B95CCC500426C70 /* Models.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Models.bundle; sourceTree = "<group>"; };
+		9D6D27AE1BE23ABD00F4E4A7 /* MKForwardPropagatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKForwardPropagatorTests.swift; sourceTree = "<group>"; };
+		9D6D27B01BE25F9800F4E4A7 /* MKActivationFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKActivationFunctions.swift; sourceTree = "<group>"; };
+		A04E9B04EE1C27607A68F65A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F8F5566B19C0E8E19A7B38B9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FC1AC75A1ADE984500832DE7 /* MRUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRUserDefaults.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		541ABB9B1AC577E00056A81B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544C73581BE7E99600B76F25 /* MBCircularProgressBar.framework in Frameworks */,
+				547F92831BA8BA1700A69295 /* WatchConnectivity.framework in Frameworks */,
+				54D5275E1B94D79F00B56719 /* Charts.framework in Frameworks */,
+				54D5275F1B94D79F00B56719 /* JTCalendar.framework in Frameworks */,
+				54430EC51BC2CFD300541979 /* HealthKit.framework in Frameworks */,
+				54A7760B1BB81467001586DD /* MuvrKit.framework in Frameworks */,
+				544201391B9384B500354DB7 /* CoreBluetooth.framework in Frameworks */,
+				54CC465A1B08FAD5007B739A /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5450C29B1BC3FFF100B257E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		546E68561BB98D0800DC0FEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				546E685E1BB98D0800DC0FEF /* MuvrKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A48AD01BA474F300F4A81B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54430EC01BC2CF5200541979 /* CoreMotion.framework in Frameworks */,
+				5487F5AF1BBA640E00ED2E97 /* libz.tbd in Frameworks */,
+				5487F5AE1BBA640500ED2E97 /* libcompression.tbd in Frameworks */,
+				5417C4021BC45EBB001C9491 /* HealthKit.framework in Frameworks */,
+				547F92851BA8BA4A00A69295 /* WatchConnectivity.framework in Frameworks */,
+				54A776211BB81562001586DD /* MuvrKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A775F21BB81467001586DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5469D3881BBA83D200EE5ADB /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A776151BB8149E001586DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		288CCE5D5AB7F6FBE827B7C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				544C73571BE7E99600B76F25 /* MBCircularProgressBar.framework */,
+				5417C4011BC45EBB001C9491 /* HealthKit.framework */,
+				5469D3871BBA83D200EE5ADB /* Accelerate.framework */,
+				5487F5AC1BBA63C900ED2E97 /* libz.tbd */,
+				5487F5A91BB9CAB800ED2E97 /* libcompression.tbd */,
+				5487F5A71BB9CAAE00ED2E97 /* libcompression.tbd */,
+				54DE161F1BAD94A400F0752B /* HealthKit.framework */,
+				54DE161B1BAD941000F0752B /* CoreMotion.framework */,
+				547F92841BA8BA4A00A69295 /* WatchConnectivity.framework */,
+				547F92821BA8BA1700A69295 /* WatchConnectivity.framework */,
+				54E3A21D1BA21482001D9EA5 /* Pods.framework */,
+				5410C8341B9DCA09005C57C1 /* Pods.framework */,
+				5410C82C1B9DC9EA005C57C1 /* Alamofire.framework */,
+				5410C82E1B9DC9EA005C57C1 /* SQLite.framework */,
+				5410C82F1B9DC9EA005C57C1 /* sqlite3.framework */,
+				54D527571B94D79F00B56719 /* Alamofire.framework */,
+				54D527581B94D79F00B56719 /* Charts.framework */,
+				54D527591B94D79F00B56719 /* JTCalendar.framework */,
+				54D5275A1B94D79F00B56719 /* Reachability.framework */,
+				54D5275B1B94D79F00B56719 /* SQLite.framework */,
+				54D5275C1B94D79F00B56719 /* sqlite3.framework */,
+				5442013C1B9384CA00354DB7 /* MessageUI.framework */,
+				5442013A1B9384BE00354DB7 /* CoreMotion.framework */,
+				544201381B9384B500354DB7 /* CoreBluetooth.framework */,
+				544201361B93847100354DB7 /* ExternalAccessory.framework */,
+				54CC46591B08FAD5007B739A /* MobileCoreServices.framework */,
+				5455E71F1AF9022A0049BB6B /* libsqlite3.dylib */,
+				2C3AA10F80ED661B9AC5A823 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		540AA44B1BDBE66300908F4B /* Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				540AA44C1BDBE74C00908F4B /* MKPhoneConnectivityTests.swift */,
+				540AA4501BDBFF6B00908F4B /* MKSessionClassifierTests.swift */,
+				540AA4531BDC043D00908F4B /* MKExerciseConnectivitySession+SensorData.swift */,
+			);
+			name = Connectivity;
+			sourceTree = "<group>";
+		};
+		541ABB951AC577E00056A81B = {
+			isa = PBXGroup;
+			children = (
+				541ABBA01AC577E00056A81B /* Muvr */,
+				5450C29F1BC3FFF100B257E7 /* MuvrUITests */,
+				54A48AC81BA474F300F4A81B /* Watch */,
+				54A48AD71BA474F300F4A81B /* Watch Extension */,
+				54A775F71BB81467001586DD /* MuvrKit */,
+				546E685A1BB98D0800DC0FEF /* MuvrKitTests */,
+				541ABB9F1AC577E00056A81B /* Products */,
+				87E693A6B954E9533DB1FC04 /* Pods */,
+				288CCE5D5AB7F6FBE827B7C7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		541ABB9F1AC577E00056A81B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				541ABB9E1AC577E00056A81B /* Muvr.app */,
+				54A48AC71BA474F300F4A81B /* Watch.app */,
+				54A48AD31BA474F300F4A81B /* Watch Extension.appex */,
+				54A775F61BB81467001586DD /* MuvrKit.framework */,
+				54A7761C1BB8149E001586DD /* MuvrKit.framework */,
+				546E68591BB98D0800DC0FEF /* MuvrKitTests.xctest */,
+				5450C29E1BC3FFF100B257E7 /* MuvrUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		541ABBA01AC577E00056A81B /* Muvr */ = {
+			isa = PBXGroup;
+			children = (
+				54430EC61BC2CFD300541979 /* Muvr.entitlements */,
+				9D30379B1B95CCC500426C70 /* Models.bundle */,
+				543C9A031BDD425900291EC5 /* Entities */,
+				547E6A821AF35680005DE00C /* Exercise */,
+				541ABBA11AC577E00056A81B /* Supporting Files */,
+				541ABBA31AC577E00056A81B /* MRAppDelegate.swift */,
+				54EFE97A1BDEC74E00AE190A /* MRAppDelegate+UITesting.swift */,
+				54706F6B1BD6D89F005BABF0 /* MRSessionsViewController.swift */,
+				54FD504D1BDBD27C0015771D /* MRSessionViewController.swift */,
+				54706F6E1BD6E6D8005BABF0 /* MRLabelViewController.swift */,
+				541ABBAA1AC577E00056A81B /* Images.xcassets */,
+				541ABBA71AC577E00056A81B /* Main.storyboard */,
+				541ABBAC1AC577E00056A81B /* LaunchScreen.xib */,
+				548225511AC57A3500EEEFCB /* Muvr-Bridging-Header.h */,
+				FC1AC75A1ADE984500832DE7 /* MRUserDefaults.swift */,
+				5403815E1AED28A0000C8B15 /* Settings.bundle */,
+				54477CFB1AF4E82E00F502EC /* Localizable.strings */,
+				549A30081BDD0BC6006A70EB /* Muvr.xcdatamodeld */,
+				6477A7571BDFBDE7004BC51F /* NSDate+DateUtils.swift */,
+				64DC9FD61BE1310400C18060 /* NSManagedObjectContext+CountRequest.swift */,
+			);
+			path = Muvr;
+			sourceTree = "<group>";
+		};
+		541ABBA11AC577E00056A81B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				541ABBA21AC577E00056A81B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		543C9A031BDD425900291EC5 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				543C9A101BDD439B00291EC5 /* MRManagedExerciseSession+CoreDataProperties.swift */,
+				543C9A111BDD439B00291EC5 /* MRManagedExerciseSession.swift */,
+				543C9A121BDD439B00291EC5 /* MRManagedLabelledExercise+CoreDataProperties.swift */,
+				543C9A131BDD439B00291EC5 /* MRManagedLabelledExercise.swift */,
+				543C9A141BDD439B00291EC5 /* MRManagedClassifiedExercise+CoreDataProperties.swift */,
+				543C9A151BDD439B00291EC5 /* MRManagedClassifiedExercise.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5450C29F1BC3FFF100B257E7 /* MuvrUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5450C2A01BC3FFF100B257E7 /* MuvrUITests.swift */,
+				5450C2A21BC3FFF100B257E7 /* Info.plist */,
+			);
+			path = MuvrUITests;
+			sourceTree = "<group>";
+		};
+		5469D3801BBA6E1000EE5ADB /* SensorData */ = {
+			isa = PBXGroup;
+			children = (
+				54266B111BB92ECC007A8A8A /* MKSensorData+Encoding.swift */,
+				54266B131BB92F16007A8A8A /* MKSensorData+Decoding.swift */,
+				54E4CB3F1BD8021C00E0B696 /* MKSensorData+EncodingCSV.swift */,
+				5487F5A51BB9C9AB00ED2E97 /* MKSensorData+Equatable.swift */,
+				5471DD341BC13760007D1034 /* MKSensorData+Scaffolding.swift */,
+				545269031BB9AB6C003F8EE8 /* MKSensorDataType+Decoding.swift */,
+				54266B161BB92F98007A8A8A /* MKSensorData.swift */,
+				5487F59B1BB9B53E00ED2E97 /* MKUnsafeBufferReader.swift */,
+				5487F59E1BB9B77E00ED2E97 /* MKCodec.swift */,
+			);
+			name = SensorData;
+			sourceTree = "<group>";
+		};
+		546D34261BE0CF3D005E614D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				546D34271BE0CF4F005E614D /* demo-bc-only.raw */,
+				546D34281BE0CF4F005E614D /* demo-lr-only.raw */,
+				546D34291BE0CF4F005E614D /* demo-te-only.raw */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		546E685A1BB98D0800DC0FEF /* MuvrKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				54E913171BC306A500B7F9F0 /* Resources */,
+				540AA44B1BDBE66300908F4B /* Connectivity */,
+				548CAB3B1BBAF71400A34D81 /* Classification */,
+				548CAB3A1BBAF70700A34D81 /* SensorData */,
+				546E685B1BB98D0800DC0FEF /* MKMuvrKitTests.swift */,
+				546E685D1BB98D0800DC0FEF /* Info.plist */,
+				548CAB401BBB0FCA00A34D81 /* XCTestCase+Exceptions.swift */,
+			);
+			path = MuvrKitTests;
+			sourceTree = "<group>";
+		};
+		547E6A821AF35680005DE00C /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				544757061B9F34F0001E00BF /* MRResistanceExerciseProgressView.xib */,
+			);
+			name = Exercise;
+			sourceTree = "<group>";
+		};
+		548CAB3A1BBAF70700A34D81 /* SensorData */ = {
+			isa = PBXGroup;
+			children = (
+				5487F5A31BB9C4C500ED2E97 /* MKSensorData+InternalCodecTests.swift */,
+				540AA44E1BDBF36800908F4B /* MKSensorData+EncodingCSV.swift */,
+				546E68641BB98D1D00DC0FEF /* MKSensorDataSingleTypeTests.swift */,
+				546E68661BB98D1D00DC0FEF /* MKSensorDataMultipleTypesTests.swift */,
+				546E68651BB98D1D00DC0FEF /* MKSensorDataThreeDPerformanceTests.swift */,
+			);
+			name = SensorData;
+			sourceTree = "<group>";
+		};
+		548CAB3B1BBAF71400A34D81 /* Classification */ = {
+			isa = PBXGroup;
+			children = (
+				548CAB3C1BBAF72600A34D81 /* MKClassifierTests.swift */,
+				54880CAC1BC048A800349C2E /* MKRepetitionEstimatorTests.swift */,
+				9D6D27AE1BE23ABD00F4E4A7 /* MKForwardPropagatorTests.swift */,
+			);
+			name = Classification;
+			sourceTree = "<group>";
+		};
+		54A48AC81BA474F300F4A81B /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				54A48ACC1BA474F300F4A81B /* Assets.xcassets */,
+				54A48AC91BA474F300F4A81B /* Interface.storyboard */,
+				54A48ACE1BA474F300F4A81B /* Info.plist */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		54A48AD71BA474F300F4A81B /* Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				546D34261BE0CF3D005E614D /* Resources */,
+				54430EC21BC2CF5900541979 /* Watch Extension.entitlements */,
+				54A48ADA1BA474F300F4A81B /* MRExtensionDelegate.swift */,
+				54A48AD81BA474F300F4A81B /* MRMainController.swift */,
+				54A48ADC1BA474F300F4A81B /* MRGlanceController.swift */,
+				54C79CAF1BD2962A00FAE395 /* MRSessionProgressGroup.swift */,
+				54C79CB11BD2968600FAE395 /* MRSessionProgressGroupRenderer.swift */,
+				54B86D091BD196190016DDA0 /* BridgingHeader.h */,
+				54B86D0A1BD197470016DDA0 /* MRBuildDetail.m */,
+				54A48AE01BA474F300F4A81B /* Info.plist */,
+				54BD57B81BC546EE008B5BC4 /* UI.xcassets */,
+			);
+			path = "Watch Extension";
+			sourceTree = "<group>";
+		};
+		54A775F71BB81467001586DD /* MuvrKit */ = {
+			isa = PBXGroup;
+			children = (
+				5469D3801BBA6E1000EE5ADB /* SensorData */,
+				54D3457C1BB922FF00F65091 /* Classification */,
+				54D3457B1BB922F400F65091 /* Connectivity */,
+				54D3457A1BB922E800F65091 /* Model */,
+				54A775F81BB81467001586DD /* MuvrKit.h */,
+				54A775FA1BB81467001586DD /* Infoi.plist */,
+				54A7761E1BB81509001586DD /* Infow.plist */,
+			);
+			path = MuvrKit;
+			sourceTree = "<group>";
+		};
+		54D3457A1BB922E800F65091 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				547A444F1BB8166C00C2CC06 /* MKExerciseModel.swift */,
+				5469D3811BBA6ECD00EE5ADB /* MKExerciseModelTypes.swift */,
+				5469D38A1BBAD0A200EE5ADB /* MKExerciseModelSourceDelegate.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		54D3457B1BB922F400F65091 /* Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				547A44581BB8585300C2CC06 /* MKWatchConnectivity.swift */,
+				547A445B1BB8600F00C2CC06 /* MKWatchConnectivity+Defaults.swift */,
+				546908191BC701BC00BA1047 /* MKWatchExerciseConnectivitySession.swift */,
+				547A44521BB817CD00C2CC06 /* MKWatchConnectivityDelegates.swift */,
+				54BD57B61BC53137008B5BC4 /* MKPhoneConnectivity.swift */,
+				54D5E9711BD3C6F70002CDB5 /* MKPhoneConnectivityDelegates.swift */,
+				5488080C1BD5710500419CD8 /* MKPhoneExerciseConnectivitySession.swift */,
+				5488080E1BD57BA500419CD8 /* MKPhoneExerciseSessionClassifier.swift */,
+				548808101BD57D7400419CD8 /* MKPhoneExerciseSessionClassifierDelegates.swift */,
+				548808121BD57D8800419CD8 /* MKPhoneExerciseSession.swift */,
+			);
+			name = Connectivity;
+			sourceTree = "<group>";
+		};
+		54D3457C1BB922FF00F65091 /* Classification */ = {
+			isa = PBXGroup;
+			children = (
+				54D345831BB9251700F65091 /* MKClassifiedExercise.swift */,
+				54845AD11BD8D73500C33DBF /* MKLabelledExercise.swift */,
+				54D3457D1BB9232A00F65091 /* MKClassifier.swift */,
+				54D3457F1BB9245E00F65091 /* MKSensorDataDelegate.swift */,
+				54D345811BB924A500F65091 /* MKClassificationDelegate.swift */,
+				54D3458A1BB928B600F65091 /* MKClassificationPipeline.swift */,
+				5469D3841BBA764900EE5ADB /* MKRepetitionEstimator.swift */,
+				5431545B1BE107F60031BE61 /* MKForwardPropagator.swift */,
+				9D6D27B01BE25F9800F4E4A7 /* MKActivationFunctions.swift */,
+			);
+			name = Classification;
+			sourceTree = "<group>";
+		};
+		54E913171BC306A500B7F9F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				54E913181BC306A500B7F9F0 /* class-1.csv */,
+				54E913191BC306A500B7F9F0 /* model-3.raw */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		87E693A6B954E9533DB1FC04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A04E9B04EE1C27607A68F65A /* Pods.debug.xcconfig */,
+				F8F5566B19C0E8E19A7B38B9 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		54A775F31BB81467001586DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54A775F91BB81467001586DD /* MuvrKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A776161BB8149E001586DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54A776171BB8149E001586DD /* MuvrKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		541ABB9D1AC577E00056A81B /* Muvr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 541ABBBD1AC577E00056A81B /* Build configuration list for PBXNativeTarget "Muvr" */;
+			buildPhases = (
+				31CC8EAACADEBCCA84332C85 /* Check Pods Manifest.lock */,
+				541ABB9A1AC577E00056A81B /* Sources */,
+				541ABB9B1AC577E00056A81B /* Frameworks */,
+				541ABB9C1AC577E00056A81B /* Resources */,
+				B9254235749BB7D35FB7A2E7 /* Copy Pods Resources */,
+				5AAFF8FE4287D04CFD84EE90 /* Embed Pods Frameworks */,
+				54A48AE31BA474F300F4A81B /* Embed Watch Content */,
+				54DE15E91BAD72A500F0752B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54A48AE21BA474F300F4A81B /* PBXTargetDependency */,
+				54A7760A1BB81467001586DD /* PBXTargetDependency */,
+			);
+			name = Muvr;
+			productName = Muvr;
+			productReference = 541ABB9E1AC577E00056A81B /* Muvr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5450C29D1BC3FFF100B257E7 /* MuvrUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5450C2A71BC3FFF100B257E7 /* Build configuration list for PBXNativeTarget "MuvrUITests" */;
+			buildPhases = (
+				5450C29A1BC3FFF100B257E7 /* Sources */,
+				5450C29B1BC3FFF100B257E7 /* Frameworks */,
+				5450C29C1BC3FFF100B257E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5450C2A41BC3FFF100B257E7 /* PBXTargetDependency */,
+			);
+			name = MuvrUITests;
+			productName = MuvrUITests;
+			productReference = 5450C29E1BC3FFF100B257E7 /* MuvrUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		546E68581BB98D0800DC0FEF /* MuvrKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 546E68611BB98D0800DC0FEF /* Build configuration list for PBXNativeTarget "MuvrKitTests" */;
+			buildPhases = (
+				546E68551BB98D0800DC0FEF /* Sources */,
+				546E68561BB98D0800DC0FEF /* Frameworks */,
+				546E68571BB98D0800DC0FEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				546E68601BB98D0800DC0FEF /* PBXTargetDependency */,
+			);
+			name = MuvrKitTests;
+			productName = MuvrKitTests;
+			productReference = 546E68591BB98D0800DC0FEF /* MuvrKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54A48AC61BA474F300F4A81B /* Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54A48AEB1BA474F300F4A81B /* Build configuration list for PBXNativeTarget "Watch" */;
+			buildPhases = (
+				54A48AC51BA474F300F4A81B /* Resources */,
+				54A48AEA1BA474F300F4A81B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54A48AD61BA474F300F4A81B /* PBXTargetDependency */,
+			);
+			name = Watch;
+			productName = Watch;
+			productReference = 54A48AC71BA474F300F4A81B /* Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		54A48AD21BA474F300F4A81B /* Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54A48AE91BA474F300F4A81B /* Build configuration list for PBXNativeTarget "Watch Extension" */;
+			buildPhases = (
+				54A48ACF1BA474F300F4A81B /* Sources */,
+				54A48AD01BA474F300F4A81B /* Frameworks */,
+				54A48AD11BA474F300F4A81B /* Resources */,
+				54DE15FD1BAD780800F0752B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54A776241BB81562001586DD /* PBXTargetDependency */,
+			);
+			name = "Watch Extension";
+			productName = "Watch Extension";
+			productReference = 54A48AD31BA474F300F4A81B /* Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		54A775F51BB81467001586DD /* MuvrKit iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54A776111BB81467001586DD /* Build configuration list for PBXNativeTarget "MuvrKit iOS" */;
+			buildPhases = (
+				54A775F11BB81467001586DD /* Sources */,
+				54A775F21BB81467001586DD /* Frameworks */,
+				54A775F31BB81467001586DD /* Headers */,
+				54A775F41BB81467001586DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MuvrKit iOS";
+			productName = MuvrKit;
+			productReference = 54A775F61BB81467001586DD /* MuvrKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		54A776131BB8149E001586DD /* MuvrKit Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54A776191BB8149E001586DD /* Build configuration list for PBXNativeTarget "MuvrKit Watch" */;
+			buildPhases = (
+				54A776141BB8149E001586DD /* Sources */,
+				54A776151BB8149E001586DD /* Frameworks */,
+				54A776161BB8149E001586DD /* Headers */,
+				54A776181BB8149E001586DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MuvrKit Watch";
+			productName = MuvrKit;
+			productReference = 54A7761C1BB8149E001586DD /* MuvrKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		541ABB961AC577E00056A81B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MR;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Muvr;
+				TargetAttributes = {
+					541ABB9D1AC577E00056A81B = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = K5TCBGB2PR;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					5450C29D1BC3FFF100B257E7 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 541ABB9D1AC577E00056A81B;
+					};
+					546E68581BB98D0800DC0FEF = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					54A48AC61BA474F300F4A81B = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = K5TCBGB2PR;
+					};
+					54A48AD21BA474F300F4A81B = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = K5TCBGB2PR;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					54A775F51BB81467001586DD = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = K5TCBGB2PR;
+					};
+					54A776131BB8149E001586DD = {
+						DevelopmentTeam = K5TCBGB2PR;
+					};
+				};
+			};
+			buildConfigurationList = 541ABB991AC577E00056A81B /* Build configuration list for PBXProject "Muvr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 541ABB951AC577E00056A81B;
+			productRefGroup = 541ABB9F1AC577E00056A81B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				541ABB9D1AC577E00056A81B /* Muvr */,
+				54A48AC61BA474F300F4A81B /* Watch */,
+				54A48AD21BA474F300F4A81B /* Watch Extension */,
+				54A775F51BB81467001586DD /* MuvrKit iOS */,
+				54A776131BB8149E001586DD /* MuvrKit Watch */,
+				546E68581BB98D0800DC0FEF /* MuvrKitTests */,
+				5450C29D1BC3FFF100B257E7 /* MuvrUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		541ABB9C1AC577E00056A81B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5403815F1AED28A0000C8B15 /* Settings.bundle in Resources */,
+				541ABBA91AC577E00056A81B /* Main.storyboard in Resources */,
+				544757071B9F34F0001E00BF /* MRResistanceExerciseProgressView.xib in Resources */,
+				9D30379C1B95CCC500426C70 /* Models.bundle in Resources */,
+				54477CFD1AF4E82E00F502EC /* Localizable.strings in Resources */,
+				541ABBAE1AC577E00056A81B /* LaunchScreen.xib in Resources */,
+				541ABBAB1AC577E00056A81B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5450C29C1BC3FFF100B257E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		546E68571BB98D0800DC0FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E9131C1BC306A500B7F9F0 /* model-3.raw in Resources */,
+				54E9131B1BC306A500B7F9F0 /* class-1.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A48AC51BA474F300F4A81B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54A48ACD1BA474F300F4A81B /* Assets.xcassets in Resources */,
+				54A48ACB1BA474F300F4A81B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A48AD11BA474F300F4A81B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				546D342A1BE0CF54005E614D /* demo-bc-only.raw in Resources */,
+				54BD57B91BC546EE008B5BC4 /* UI.xcassets in Resources */,
+				546D342C1BE0CF54005E614D /* demo-te-only.raw in Resources */,
+				546D342B1BE0CF54005E614D /* demo-lr-only.raw in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A775F41BB81467001586DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A776181BB8149E001586DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31CC8EAACADEBCCA84332C85 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5AAFF8FE4287D04CFD84EE90 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9254235749BB7D35FB7A2E7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		541ABB9A1AC577E00056A81B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54EFE97B1BDEC74E00AE190A /* MRAppDelegate+UITesting.swift in Sources */,
+				543C9A1A1BDD439B00291EC5 /* MRManagedClassifiedExercise+CoreDataProperties.swift in Sources */,
+				FC1AC75B1ADE984500832DE7 /* MRUserDefaults.swift in Sources */,
+				543C9A161BDD439B00291EC5 /* MRManagedExerciseSession+CoreDataProperties.swift in Sources */,
+				64DC9FD71BE1310400C18060 /* NSManagedObjectContext+CountRequest.swift in Sources */,
+				543C9A181BDD439B00291EC5 /* MRManagedLabelledExercise+CoreDataProperties.swift in Sources */,
+				54706F6F1BD6E6D8005BABF0 /* MRLabelViewController.swift in Sources */,
+				543C9A1B1BDD439B00291EC5 /* MRManagedClassifiedExercise.swift in Sources */,
+				54706F6C1BD6D89F005BABF0 /* MRSessionsViewController.swift in Sources */,
+				549A300A1BDD0BC6006A70EB /* Muvr.xcdatamodeld in Sources */,
+				541ABBA41AC577E00056A81B /* MRAppDelegate.swift in Sources */,
+				543C9A171BDD439B00291EC5 /* MRManagedExerciseSession.swift in Sources */,
+				54FD504E1BDBD27C0015771D /* MRSessionViewController.swift in Sources */,
+				6477A7581BDFBDE7004BC51F /* NSDate+DateUtils.swift in Sources */,
+				543C9A191BDD439B00291EC5 /* MRManagedLabelledExercise.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5450C29A1BC3FFF100B257E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5450C2A11BC3FFF100B257E7 /* MuvrUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		546E68551BB98D0800DC0FEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4A514B1BE7976B0065BEF8 /* MKForwardPropagator.swift in Sources */,
+				546E685C1BB98D0800DC0FEF /* MKMuvrKitTests.swift in Sources */,
+				546E68671BB98D1D00DC0FEF /* MKSensorDataSingleTypeTests.swift in Sources */,
+				5487F5A41BB9C4C500ED2E97 /* MKSensorData+InternalCodecTests.swift in Sources */,
+				546E68681BB98D1D00DC0FEF /* MKSensorDataThreeDPerformanceTests.swift in Sources */,
+				540AA4511BDBFF6B00908F4B /* MKSessionClassifierTests.swift in Sources */,
+				9D4A514A1BE796BD0065BEF8 /* MKActivationFunctions.swift in Sources */,
+				9D6D27AF1BE23ABD00F4E4A7 /* MKForwardPropagatorTests.swift in Sources */,
+				548CAB3D1BBAF72600A34D81 /* MKClassifierTests.swift in Sources */,
+				540AA4541BDC043D00908F4B /* MKExerciseConnectivitySession+SensorData.swift in Sources */,
+				548CAB411BBB0FCA00A34D81 /* XCTestCase+Exceptions.swift in Sources */,
+				54880CAD1BC048A800349C2E /* MKRepetitionEstimatorTests.swift in Sources */,
+				546E68691BB98D1D00DC0FEF /* MKSensorDataMultipleTypesTests.swift in Sources */,
+				540AA44F1BDBF36800908F4B /* MKSensorData+EncodingCSV.swift in Sources */,
+				540AA44D1BDBE74C00908F4B /* MKPhoneConnectivityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A48ACF1BA474F300F4A81B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54C79CB01BD2962A00FAE395 /* MRSessionProgressGroup.swift in Sources */,
+				54B86D0B1BD197830016DDA0 /* MRBuildDetail.m in Sources */,
+				54A48ADB1BA474F300F4A81B /* MRExtensionDelegate.swift in Sources */,
+				54A48AD91BA474F300F4A81B /* MRMainController.swift in Sources */,
+				54A48ADD1BA474F300F4A81B /* MRGlanceController.swift in Sources */,
+				54C79CB21BD2968600FAE395 /* MRSessionProgressGroupRenderer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A775F11BB81467001586DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4A51491BE77BE70065BEF8 /* MKActivationFunctions.swift in Sources */,
+				5487F59F1BB9B77E00ED2E97 /* MKCodec.swift in Sources */,
+				54D5E9721BD3C6F70002CDB5 /* MKPhoneConnectivityDelegates.swift in Sources */,
+				54D345801BB9245E00F65091 /* MKSensorDataDelegate.swift in Sources */,
+				5471DD3A1BC13911007D1034 /* MKSensorData+Scaffolding.swift in Sources */,
+				54266B141BB92F16007A8A8A /* MKSensorData+Decoding.swift in Sources */,
+				545269051BB9AB6C003F8EE8 /* MKSensorDataType+Decoding.swift in Sources */,
+				54D3457E1BB9232A00F65091 /* MKClassifier.swift in Sources */,
+				54D3458B1BB928B600F65091 /* MKClassificationPipeline.swift in Sources */,
+				548808131BD57D8800419CD8 /* MKPhoneExerciseSession.swift in Sources */,
+				5488080D1BD5710500419CD8 /* MKPhoneExerciseConnectivitySession.swift in Sources */,
+				5487F5A61BB9C9AB00ED2E97 /* MKSensorData+Equatable.swift in Sources */,
+				5469D38B1BBAD0A200EE5ADB /* MKExerciseModelSourceDelegate.swift in Sources */,
+				54D345841BB9251700F65091 /* MKClassifiedExercise.swift in Sources */,
+				54BD57B71BC53137008B5BC4 /* MKPhoneConnectivity.swift in Sources */,
+				54D345821BB924A500F65091 /* MKClassificationDelegate.swift in Sources */,
+				5469D3851BBA764900EE5ADB /* MKRepetitionEstimator.swift in Sources */,
+				548808111BD57D7400419CD8 /* MKPhoneExerciseSessionClassifierDelegates.swift in Sources */,
+				54266B171BB92F98007A8A8A /* MKSensorData.swift in Sources */,
+				5487F59C1BB9B53E00ED2E97 /* MKUnsafeBufferReader.swift in Sources */,
+				54845AD21BD8D73500C33DBF /* MKLabelledExercise.swift in Sources */,
+				5469D3821BBA6ECD00EE5ADB /* MKExerciseModelTypes.swift in Sources */,
+				546E68521BB969DD00DC0FEF /* MKSensorData+Encoding.swift in Sources */,
+				5431545C1BE107F60031BE61 /* MKForwardPropagator.swift in Sources */,
+				54E4CB401BD8021C00E0B696 /* MKSensorData+EncodingCSV.swift in Sources */,
+				5488080F1BD57BA500419CD8 /* MKPhoneExerciseSessionClassifier.swift in Sources */,
+				547A44501BB8166C00C2CC06 /* MKExerciseModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A776141BB8149E001586DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54266B151BB92F22007A8A8A /* MKSensorData+Encoding.swift in Sources */,
+				547A445A1BB8585300C2CC06 /* MKWatchConnectivity.swift in Sources */,
+				546D342F1BE0CFE7005E614D /* MKSensorDataType+Decoding.swift in Sources */,
+				54D3458C1BB928B600F65091 /* MKClassificationPipeline.swift in Sources */,
+				54D345851BB9251700F65091 /* MKClassifiedExercise.swift in Sources */,
+				547A445C1BB8600F00C2CC06 /* MKWatchConnectivity+Defaults.swift in Sources */,
+				5469081B1BC701C200BA1047 /* MKWatchExerciseConnectivitySession.swift in Sources */,
+				54266B181BB92F98007A8A8A /* MKSensorData.swift in Sources */,
+				54845AD31BD8D73500C33DBF /* MKLabelledExercise.swift in Sources */,
+				5469D3831BBA6ECD00EE5ADB /* MKExerciseModelTypes.swift in Sources */,
+				5487F5A01BB9B77E00ED2E97 /* MKCodec.swift in Sources */,
+				546D342D1BE0CFC7005E614D /* MKSensorData+Decoding.swift in Sources */,
+				547A44541BB817CD00C2CC06 /* MKWatchConnectivityDelegates.swift in Sources */,
+				546D342E1BE0CFCF005E614D /* MKUnsafeBufferReader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5450C2A41BC3FFF100B257E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 541ABB9D1AC577E00056A81B /* Muvr */;
+			targetProxy = 5450C2A31BC3FFF100B257E7 /* PBXContainerItemProxy */;
+		};
+		546E68601BB98D0800DC0FEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54A775F51BB81467001586DD /* MuvrKit iOS */;
+			targetProxy = 546E685F1BB98D0800DC0FEF /* PBXContainerItemProxy */;
+		};
+		54A48AD61BA474F300F4A81B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54A48AD21BA474F300F4A81B /* Watch Extension */;
+			targetProxy = 54A48AD51BA474F300F4A81B /* PBXContainerItemProxy */;
+		};
+		54A48AE21BA474F300F4A81B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54A48AC61BA474F300F4A81B /* Watch */;
+			targetProxy = 54A48AE11BA474F300F4A81B /* PBXContainerItemProxy */;
+		};
+		54A7760A1BB81467001586DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54A775F51BB81467001586DD /* MuvrKit iOS */;
+			targetProxy = 54A776091BB81467001586DD /* PBXContainerItemProxy */;
+		};
+		54A776241BB81562001586DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54A776131BB8149E001586DD /* MuvrKit Watch */;
+			targetProxy = 54A776231BB81562001586DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		541ABBA71AC577E00056A81B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				541ABBA81AC577E00056A81B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		541ABBAC1AC577E00056A81B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				541ABBAD1AC577E00056A81B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		54477CFB1AF4E82E00F502EC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54477CFC1AF4E82E00F502EC /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		54A48AC91BA474F300F4A81B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54A48ACA1BA474F300F4A81B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		541ABBBB1AC577E00056A81B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		541ABBBC1AC577E00056A81B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		541ABBBE1AC577E00056A81B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A04E9B04EE1C27607A68F65A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Muvr/Muvr.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = Muvr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"Charts\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"JTCalendar\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"CoreBluetooth\"",
+					"-weak_framework",
+					"\"CoreMotion\"",
+					"-weak_framework",
+					"\"ExternalAccessory\"",
+					"-weak_framework",
+					"\"MessageUI\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.muvr.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Muvr/Muvr-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		541ABBBF1AC577E00056A81B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8F5566B19C0E8E19A7B38B9 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Muvr/Muvr.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = Muvr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"Charts\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"JTCalendar\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"CoreBluetooth\"",
+					"-weak_framework",
+					"\"CoreMotion\"",
+					"-weak_framework",
+					"\"ExternalAccessory\"",
+					"-weak_framework",
+					"\"MessageUI\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.muvr.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Muvr/Muvr-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		5450C2A51BC3FFF100B257E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = MuvrUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.muvr.MuvrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Muvr;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		5450C2A61BC3FFF100B257E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = MuvrUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.muvr.MuvrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Muvr;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		546E68621BB98D0800DC0FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = MuvrKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.muvr.Muvr.MuvrKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		546E68631BB98D0800DC0FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = MuvrKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.muvr.Muvr.MuvrKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		54A48AE51BA474F300F4A81B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = io.muvr.Muvr.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		54A48AE61BA474F300F4A81B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = io.muvr.Muvr.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		54A48AE71BA474F300F4A81B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Watch Extension/Watch Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.muvr.Muvr.watchkitapp.wkextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Watch Extension/BridgingHeader.h";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		54A48AE81BA474F300F4A81B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Watch Extension/Watch Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.muvr.Muvr.watchkitapp.wkextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Watch Extension/BridgingHeader.h";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		54A7760D1BB81467001586DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = MuvrKit/Infoi.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D Pebble";
+				PRODUCT_BUNDLE_IDENTIFIER = io.muvr.Muvr.MuvrKit;
+				PRODUCT_NAME = MuvrKit;
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		54A7760E1BB81467001586DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = MuvrKit/Infoi.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D Pebble";
+				PRODUCT_BUNDLE_IDENTIFIER = io.muvr.Muvr.MuvrKit;
+				PRODUCT_NAME = MuvrKit;
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		54A7761A1BB8149E001586DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = MuvrKit/Infow.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.muvr.Muvr.MuvrKit;
+				PRODUCT_NAME = MuvrKit;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos2.0;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		54A7761B1BB8149E001586DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = MuvrKit/Infow.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.muvr.Muvr.MuvrKit;
+				PRODUCT_NAME = MuvrKit;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos2.0;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		541ABB991AC577E00056A81B /* Build configuration list for PBXProject "Muvr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541ABBBB1AC577E00056A81B /* Debug */,
+				541ABBBC1AC577E00056A81B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		541ABBBD1AC577E00056A81B /* Build configuration list for PBXNativeTarget "Muvr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541ABBBE1AC577E00056A81B /* Debug */,
+				541ABBBF1AC577E00056A81B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5450C2A71BC3FFF100B257E7 /* Build configuration list for PBXNativeTarget "MuvrUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5450C2A51BC3FFF100B257E7 /* Debug */,
+				5450C2A61BC3FFF100B257E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		546E68611BB98D0800DC0FEF /* Build configuration list for PBXNativeTarget "MuvrKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				546E68621BB98D0800DC0FEF /* Debug */,
+				546E68631BB98D0800DC0FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54A48AE91BA474F300F4A81B /* Build configuration list for PBXNativeTarget "Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54A48AE71BA474F300F4A81B /* Debug */,
+				54A48AE81BA474F300F4A81B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54A48AEB1BA474F300F4A81B /* Build configuration list for PBXNativeTarget "Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54A48AE51BA474F300F4A81B /* Debug */,
+				54A48AE61BA474F300F4A81B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54A776111BB81467001586DD /* Build configuration list for PBXNativeTarget "MuvrKit iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54A7760D1BB81467001586DD /* Debug */,
+				54A7760E1BB81467001586DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54A776191BB8149E001586DD /* Build configuration list for PBXNativeTarget "MuvrKit Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54A7761A1BB8149E001586DD /* Debug */,
+				54A7761B1BB8149E001586DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		549A30081BDD0BC6006A70EB /* Muvr.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				549A30091BDD0BC6006A70EB /* Muvr.xcdatamodel */,
+			);
+			currentVersion = 549A30091BDD0BC6006A70EB /* Muvr.xcdatamodel */;
+			path = Muvr.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 541ABB961AC577E00056A81B /* Project object */;
+}

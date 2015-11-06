@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
+    <entity name="MRManagedClassifiedExercise" representedClassName=".MRManagedClassifiedExercise" syncable="YES">
+        <attribute name="confidence" optional="YES" attributeType="Double" minValueString="0" maxValueString="1" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="duration" attributeType="Double" minValueString="0" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="exerciseId" attributeType="String" syncable="YES"/>
+        <attribute name="intensity" optional="YES" attributeType="Double" minValueString="0" maxValueString="1" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="repetitions" optional="YES" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="start" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Double" minValueString="0" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="exerciseSession" maxCount="1" deletionRule="Nullify" destinationEntity="MRManagedExerciseSession" inverseName="classifiedExercises" inverseEntity="MRManagedExerciseSession" syncable="YES"/>
+    </entity>
+    <entity name="MRManagedExerciseSession" representedClassName=".MRManagedExerciseSession" syncable="YES">
+        <attribute name="exerciseModelId" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="sensorData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="start" attributeType="Date" indexed="YES" syncable="YES"/>
+        <relationship name="classifiedExercises" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="MRManagedClassifiedExercise" inverseName="exerciseSession" inverseEntity="MRManagedClassifiedExercise" syncable="YES"/>
+        <relationship name="labelledExercises" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="MRManagedLabelledExercise" inverseName="exerciseSession" inverseEntity="MRManagedLabelledExercise" syncable="YES"/>
+    </entity>
+    <entity name="MRManagedLabelledExercise" representedClassName=".MRManagedLabelledExercise" syncable="YES">
+        <attribute name="end" attributeType="Date" syncable="YES"/>
+        <attribute name="exerciseId" attributeType="String" syncable="YES"/>
+        <attribute name="intensity" optional="YES" attributeType="Double" minValueString="0" maxValueString="1" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="repetitions" optional="YES" attributeType="Integer 32" minValueString="0" defaultValueString="0" syncable="YES"/>
+        <attribute name="start" attributeType="Date" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Double" minValueString="0" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="exerciseSession" maxCount="1" deletionRule="Nullify" destinationEntity="MRManagedExerciseSession" inverseName="labelledExercises" inverseEntity="MRManagedExerciseSession" syncable="YES"/>
+    </entity>
+    <fetchRequest name="FetchRequest" entity="MRManagedExerciseSession" predicateString="id == &quot;@id&quot;"/>
+    <elements>
+        <element name="MRManagedClassifiedExercise" positionX="-1098" positionY="-459" width="128" height="165"/>
+        <element name="MRManagedExerciseSession" positionX="-765" positionY="-162" width="128" height="135"/>
+        <element name="MRManagedLabelledExercise" positionX="-1746" positionY="-531" width="128" height="150"/>
+    </elements>
+</model>
