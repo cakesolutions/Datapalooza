@@ -40,6 +40,18 @@ use these functions in a better implementation of `tanh` and `sigmoid` AFs.
 
 # Training model session
 
+## Setup Python environment
+
+```bash
+cd analytics
+./init-env.sh
+```
+To start development on Python code or notebooks
+```bash
+source venv/bin/activate
+# After you call this line, you should see (venv) added at the beginning of your shell prompt. 
+```
+
 ## Challenge
 
 - In mlp/training/mlp_model.py, construct the inner layers for the MLP
@@ -69,10 +81,7 @@ To start development on Python code or notebooks
 source venv/bin/activate
 # After you call this line, you should see (venv) added at the beginning of your shell prompt. 
 ```
-Start notebooks
-```bash
-jupyter notebook --ip="*"
-```
+
 ## Challenge
 TODO - (Add better wording)
 Essentially, use the Spark connector `sc` in the `main` of `mlp/start_analysis.py` to extract relevant user exercise training data from the Cassandra cluster. Perform some Spark magic and apply `train_model_for_user` to the data set to generate a new model and persist back into Cassandra.
