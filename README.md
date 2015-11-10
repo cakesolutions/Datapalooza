@@ -72,6 +72,8 @@ analytics $ python mlp/start_training.py \
 
 ## Setup Python environment
 
+*NOTE: You don't need to setup again if you have already ran your environment for the challenge on the previous section*
+
 ```bash
 cd analytics
 ./init-env.sh
