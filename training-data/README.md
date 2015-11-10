@@ -1,4 +1,4 @@
-# muvr-training-data
+# training-data
 
 This repository is a collection of training datasets used for analysis and model training during model evaluation. 
 Newly added datasets should be listed here including there format and a short description.
