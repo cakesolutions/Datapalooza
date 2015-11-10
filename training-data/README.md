@@ -26,15 +26,3 @@ The dataset is a collection of **labeled** data, one file per exercise. A file f
 ```
 x | y | z | exercise name | intensity | weight | repetitions |
 ```
-
-#### single-exercise-simple (deprecated)
-The dataset is a collection of **labeled** data, one file per exercise. A file for an exercise is in CSV format and there is one row per measurement:
-```
-exercise group | exercise name | x | y | z |
-```
-
-#### combined-1200 (deprecated)
-The dataset is a collection of **labeled** data in a single file. The file is in CSV and there is one row per example:
-```
-label | X1 | X2 | ... | X400  | Y1 | Y2 | ... | Y400   | Z1 | Z2 | ... | Z400 
-```
