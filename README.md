@@ -54,7 +54,7 @@ source venv/bin/activate
 
 ## Challenge
 
-- In mlp/training/mlp_model.py, construct the inner layers for the MLP
+- In `mlp/training/mlp_model.py`, construct the inner layers for the MLP
 - Recall that we have 1200 perceptrons in the input layer, then 250, 100 and 3 in the output layer (for 3 labels).
 - Construct the layers array to hold
 	- `ReLU` layer with 250 perceptrons
@@ -92,4 +92,4 @@ source venv/bin/activate
 	The table has the following format
  	`user_id | model_id | file_name | time | x | y | z | exercise`
 - Parallelize the computation for each `user_id` and `model_id` combination using training `train_model_for_user` function using Spark
-- Run `run_spark.sh` to submit your Spark job to Spark cluster
+- Change your directory to `mlp` and run `run_spark.sh` to submit your Spark job to Spark cluster
