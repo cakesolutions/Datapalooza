@@ -83,8 +83,13 @@ source venv/bin/activate
 ```
 
 ## Challenge
-TODO - (Add better wording)
-Essentially, use the Spark connector `sc` in the `main` of `mlp/start_analysis.py` to extract relevant user exercise training data from the Cassandra cluster. Perform some Spark magic and apply `train_model_for_user` to the data set to generate a new model and persist back into Cassandra.
 
+- In `start_analysis.py` complete the main method.
+- `SparkContext` is already configured and available as `sc`.
+- Read data from Cassandra database (keyspace training, table data - see conf)
+	The table has the following format
+ 	`user_id | model_id | file_name | time | x | y | z | exercise`
+- Parallelize the computation for each `user_id` and `model_id` combination using training `train_model_for_user` function using Spark
+- Run `run_spark.sh` to submit your Spark job to Spark cluster
 
 
