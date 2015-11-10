@@ -66,9 +66,9 @@ source venv/bin/activate
 analytics $ python mlp/start_training.py \
   -m chest -d ../training-data/labelled/chest -o ./output
 ```
-- Observe the output; see if you can optimise the hyperparameters
+- Observe the output; see if you can optimise the hyperparameters 
 
-# Parallelise the computation
+# Parallelize the computation
 
 ## Setup Python environment
 
@@ -93,5 +93,3 @@ source venv/bin/activate
  	`user_id | model_id | file_name | time | x | y | z | exercise`
 - Parallelize the computation for each `user_id` and `model_id` combination using training `train_model_for_user` function using Spark
 - Run `run_spark.sh` to submit your Spark job to Spark cluster
-
-
