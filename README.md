@@ -13,8 +13,8 @@ A repository for the combined code of Muvr that would be used during Datapalooza
 
 	Note: Cocoapods needs Ruby in your system
 - Install the `pod` dependencies by running `pod install`
-- Load Muvr.xcworkspace on Xcode
-- Remove Pods.Framework form Xcode dependencies
+- Load `Muvr.xcworkspace` on Xcode
+- [Optional] Remove `Pods.Framework` in Xcode dependencies
 - Build and run
 
 ## Challenge One
