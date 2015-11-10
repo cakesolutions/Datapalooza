@@ -1,5 +1,7 @@
 # Datapalooza
-A repository for the combined code of Muvr that would be used during Datapalooza 
+A repository for the combined code of Muvr that would be used during Datapalooza.
+
+[muvr](http://www.muvr.io/) is a demonstration of an application that uses _wearable devices_ (Pebble)—in combination with a mobile app—to submit physical (i.e. accelerometer, compass) and biological (i.e. heart rate) information to a CQRS/ES cluster to be analysed.
 
 
 # Wearables & mobile session
