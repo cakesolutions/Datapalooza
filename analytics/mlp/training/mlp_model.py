@@ -103,7 +103,7 @@ class MLPMeasurementModelTrainer(object):
               % (self.model_name, model.eval(dataset.test(), metric=Misclassification()) * 100))
         print "[%s] Finished training!" % self.model_name
         end = time.time()
-        print "[%s] Duration", end - start, "seconds" % self.model_name
+        print "[%s] Duration in seconds", end - start
 
         return model
 
