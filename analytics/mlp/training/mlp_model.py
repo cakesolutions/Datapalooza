@@ -29,6 +29,7 @@ class MLPMeasurementModelTrainer(object):
         """Initialize paths and loggers of the model."""
         # Storage director of the model and its snapshots
         self.root_path = root_path
+        self.model_name = os.path.basename(self.root_path)
         self.model_path = os.path.join(self.root_path, self.Model_Filename)
         utils.remove_if_exists(self.model_path)
         
@@ -42,7 +43,7 @@ class MLPMeasurementModelTrainer(object):
             dslogger = logging.getLogger(name)
             dslogger.setLevel(40)
 
-        print 'Epochs: %d Batch-Size: %d' % (self.max_epochs, self.batch_size)
+        print "[%s] Epochs: %d Batch-Size: %d" % (self.model_name, self.max_epochs, self.batch_size)
 
     def generate_default_model(self, num_labels):
         """Generate layers and a MLP model using the given settings."""
@@ -53,7 +54,7 @@ class MLPMeasurementModelTrainer(object):
 
     def train(self, dataset, model=None):
         """Trains the passed model on the given dataset. If no model is passed, `generate_default_model` is used."""
-        print "Starting training..."
+        print "[%s] Starting training..." % self.model_name                                                              
         start = time.time()
 
         # The training will be run on the CPU. If a GPU is available it should be used instead.
@@ -77,7 +78,7 @@ class MLPMeasurementModelTrainer(object):
         args = NeonCallbackParameters()
         args.output_file = os.path.join(self.root_path, self.Callback_Store_Filename)
         args.evaluation_freq = 1
-        args.progress_bar = True
+        args.progress_bar = False
         args.epochs = self.max_epochs
         args.save_path = os.path.join(self.root_path, self.Intermediate_Model_Filename)
         args.serialize = 1
@@ -98,11 +99,11 @@ class MLPMeasurementModelTrainer(object):
             cost=cost,
             callbacks=callbacks)
 
-        print('Misclassification error = %.1f%%'
-              % (model.eval(dataset.test(), metric=Misclassification()) * 100))
-        print "Finished training!"
+        print("[%s] Misclassification error = %.1f%%"
+              % (self.model_name, model.eval(dataset.test(), metric=Misclassification()) * 100))
+        print "[%s] Finished training!" % self.model_name
         end = time.time()
-        print "Duration", end - start, "seconds"
+        print "[%s] Duration", end - start, "seconds" % self.model_name
 
         return model
 
