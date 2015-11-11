@@ -1,14 +1,13 @@
 import sys
 from pyspark import SparkContext, SparkConf
-from pyspark_cassandra import CassandraSparkContext
 import os
 from converters import neon2iosmlp
-from training.acceleration_dataset import SparkAccelerationDataset
+from training.acceleration_dataset import CSVAccelerationDataset
 from training.mlp_model import MLPMeasurementModelTrainer
 from itertools import groupby
 from operator import attrgetter
 import uuid
-
+import shutil
 
 def run_training_on(dataset, working_directory):
     """Create a fresh trainer to train a model on the dataset.
@@ -28,27 +27,23 @@ def run_training_on(dataset, working_directory):
     return str_model, layer_config, labels 
 
 
-def train_model_for_user((info, rows)):
-    """"Train a model for the user and a model_id (e.g. 'chest' or 'back')."""
-    user_id = info["user_id"]
-    model_id = info["model_id"]
+def train_model_for_directory(dataset_directory):
+    """"Train a model for the dataset directory."""
+    
+    model_name = os.path.basename(dataset_directory)
 
-    print "Training model '{0}' for user '{1}'".format(model_id, user_id)
+    print "Training model '{0}'\n".format(model_name)
 
-    # Make sure the sampled data is in the order it was sampled
-    sorted_samples = sorted(rows, key=attrgetter("time"))
-    # Group the samples by their exercise session 
-    train_examples = [list(samples) for _, samples in groupby(sorted_samples, key=attrgetter("file_name"))]
+    working_directory = os.path.join(conf["working_directory"], model_name)
 
-    dataset = SparkAccelerationDataset(train_examples)
-    working_directory = os.path.join(conf["working_directory"], "models", user_id, model_id)
+    # Load csv files into the dataset
+    dataset = CSVAccelerationDataset(dataset_directory)
 
     bin_model, layers, labels = run_training_on(dataset, working_directory)
 
     return {
         "id": uuid.uuid1(),
-        "user_id": user_id,
-        "model_id": model_id,
+        "model_name": model_name,
         "model": bin_model,
         "layers": layers,
         "labels": labels
@@ -64,21 +59,14 @@ def main(sc):
 if __name__ == '__main__':
 
     conf = {
-        "cassandra": {
-            "address": "52.8.10.117",
-            "data_keyspace": "training",
-            "data_table": "data",
-            "model_keyspace": "training",
-            "model_table": "models"
-        },
+        "dataset_directory": os.path.abspath("../../training-data/labelled"),
         "working_directory": os.path.abspath("../output")
     }
 
     spark_configuration = SparkConf() \
-        .setAppName("Muvr python spark training") \
-        .set("spark.cassandra.connection.host", conf["cassandra"]["address"])
+        .setAppName("Muvr python spark training")
 
     # An external script needs to make sure that all the dependencies are packaged and provided to the workers!
-    sc = CassandraSparkContext(conf=spark_configuration)
+    sc = SparkContext(conf=spark_configuration)
 
     sys.exit(main(sc))
